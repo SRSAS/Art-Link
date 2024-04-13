@@ -1,5 +1,7 @@
 package com.artlink.app.user.domain;
 
+import com.artlink.app.auth.domain.AuthUser;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -12,10 +14,10 @@ public class User {
     private String username;
     private String name;
     
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphalRemoval = true)
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
     private AuthUser authUser;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphalRemoval = true)
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
     private UserData userData;
 
     protected User() {}
@@ -24,7 +26,6 @@ public class User {
         setName(name);
         setUsername(username);
         setAuthUser(AuthUser.createAuthUser(this, username, email, type));
-        setUserData(UserData.createUserData(this));
     }
 
     public Integer getId() {
@@ -52,7 +53,7 @@ public class User {
     }
 
     public AuthUser getAuthUser() {
-        return this.authuser;
+        return this.authUser;
     }
 
     public void setAuthUser(AuthUser authUser) {
@@ -67,6 +68,10 @@ public class User {
         this.userData = userData;
     }
 
+    public String getRole() {
+        //TODO implement other roles
+        return "USER";
+    }
 
 }
 

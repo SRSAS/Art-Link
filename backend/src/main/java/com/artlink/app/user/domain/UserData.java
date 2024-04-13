@@ -20,10 +20,10 @@ public class UserData {
     @JoinColumn(name = "user")
     private User user;
 
-    public UserData() {
+    protected UserData() {
     }
 
-    public UserData(User user) {
+    protected UserData(User user) {
         this.user = user;
     }
 
