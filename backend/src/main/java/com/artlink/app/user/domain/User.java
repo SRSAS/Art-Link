@@ -20,9 +20,9 @@ public class User {
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "user", fetch = FetchType.EAGER, orphanRemoval = true)
     private UserData userData;
 
-    protected User() {}
+    public User() {}
 
-    protected User(String name, String username, String email, AuthUser.Type type) {
+    public User(String name, String username, String email, AuthUser.Type type) {
         setName(name);
         setUsername(username);
         setAuthUser(AuthUser.createAuthUser(this, username, email, type));
