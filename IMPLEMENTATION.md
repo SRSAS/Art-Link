@@ -23,7 +23,7 @@ Implement initial functionalities. Implement basic frontend pages, and allow use
 - :white_check_mark:: Implement User class;
 - :white_check_mark: Implement UserData class;
 - :white_large_square: Setup user profile picture backend management;
-- :clock10: Implement UserDto class;
+- :white_check_mark: Implement UserDto class;
 - :white_check_mark: Implement User repository;
 - :clock10: Implement User service: registerUser;
 - :clock10: Implement User service: getUsersByNameExpression;
