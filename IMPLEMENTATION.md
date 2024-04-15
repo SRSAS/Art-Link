@@ -24,7 +24,7 @@ Implement initial functionalities. Implement basic frontend pages, and allow use
 - :white_check_mark: Implement UserData class;
 - :white_large_square: Setup user profile picture backend management;
 - :clock10: Implement UserDto class;
-- :white_large_square: Implement User repository;
+- :clock10: Implement User repository;
 - :white_large_square: Implement User service: registerUser;
 - :white_large_square: Implement User service: getUsersByNameExpression;
 - :white_large_square: Implement User service: getUserById;
@@ -32,9 +32,9 @@ Implement initial functionalities. Implement basic frontend pages, and allow use
 - :white_large_square: Implement User REST service getUsersByNameExpression;
 - :white_large_square: Implement User REST service: getUserById;
 #### Auth backend structure
-- :clock10: Implement AuthUser class;
+- :white_check_mark: Implement AuthUser class;
 - :clock10: Implement AuthUserDto class;
-- :white_large_square: Implement AuthUser repository;
+- :clock10: Implement AuthUser repository;
 - :white_large_square: Implement AuthUser service loginUser();
 - :white_large_square: Implement AuthUser service logoutUser();
 - :white_large_square: Implement AuthUser service getDemoUser();
