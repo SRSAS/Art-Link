@@ -1,5 +1,6 @@
 package com.artlink.app.user.repository;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,5 +14,5 @@ import com.artlink.app.user.domain.User;
 @Transactional
 public interface UserRepository extends JpaRepository<User, Integer> {
     @Query(value = "SELECT * FROM users u WHERE u.username LIKE :expression", nativeQuery = true)
-    Optional<User> findUsersByUsernameExpression(String expression);
+    Optional<List<User>> findUsersByUsernameExpression(String expression);
 }
