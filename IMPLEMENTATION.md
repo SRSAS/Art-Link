@@ -26,7 +26,7 @@ Implement initial functionalities. Implement basic frontend pages, and allow use
 - :white_check_mark: Implement UserDto class;
 - :white_check_mark: Implement User repository;
 - :white_check_mark: Implement User service: registerUser;
-- :clock10: Implement User service: getUsersByNameExpression;
+- :white_check_mark: Implement User service: getUsersByNameExpression;
 - :white_large_square: Implement User REST service registerUser;
 - :white_large_square: Implement User REST service getUsersByNameExpression;
 #### Auth backend structure

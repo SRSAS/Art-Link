@@ -105,4 +105,12 @@ public class UserService {
     public UserData getData(Integer id) throws Exception {
         return (userRepository.findById(id).orElseThrow(() -> new Exception("User not found"))).getUserData();
     }
+
+    @Transactional(isolation = Isolation.READ_COMMITTED)
+    public List<UserDto> getUsersByNameExpression(String expression) throws Exception {
+    return userRepository.findUsersByUsernameExpression(expression).orElseThrow(() -> new Exception("Users not found"))
+        .stream().map(user -> new UserDto(user))
+        .sorted(Comparator.comparing(UserDto::getUsername))
+        .collect(Collectors.toList());
+    }
 }
