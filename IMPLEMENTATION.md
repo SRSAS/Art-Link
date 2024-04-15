@@ -24,20 +24,20 @@ Implement initial functionalities. Implement basic frontend pages, and allow use
 - :white_check_mark: Implement UserData class;
 - :white_large_square: Setup user profile picture backend management;
 - :clock10: Implement UserDto class;
-- :clock10: Implement User repository;
-- :white_large_square: Implement User service: registerUser;
-- :white_large_square: Implement User service: getUsersByNameExpression;
-- :white_large_square: Implement User service: getUserById;
+- :white_check_mark: Implement User repository;
+- :clock10: Implement User service: registerUser;
+- :clock10: Implement User service: getUsersByNameExpression;
+- :clock10: Implement User service: getUserById;
 - :white_large_square: Implement User REST service registerUser;
 - :white_large_square: Implement User REST service getUsersByNameExpression;
 - :white_large_square: Implement User REST service: getUserById;
 #### Auth backend structure
 - :white_check_mark: Implement AuthUser class;
 - :clock10: Implement AuthUserDto class;
-- :clock10: Implement AuthUser repository;
-- :white_large_square: Implement AuthUser service loginUser();
-- :white_large_square: Implement AuthUser service logoutUser();
-- :white_large_square: Implement AuthUser service getDemoUser();
+- :white_check_mark: Implement AuthUser repository;
+- :clock10: Implement AuthUser service loginUser();
+- :clock10: Implement AuthUser service logoutUser();
+- :clock10: Implement AuthUser service getDemoUser();
 - :white_large_square: Implement AuthUser REST service loginUser();
 - :white_large_square: Implement AuthUser REST service logoutUser();
 - :white_large_square: Implement AuthUser REST service getDemoUser();
